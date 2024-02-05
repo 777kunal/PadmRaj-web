@@ -56,59 +56,7 @@
 <!-- Bootstrap Lightbox CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
 <!-- Custom CSS -->
-<style>
-  .gallery-item {
-    margin-bottom: 20px;
-    overflow: hidden; /* Hide overflow to hide image overlay */
-    position: relative; /* Position for overlay */
-  }
 
-  .gallery-item img {
-    transition: transform 0.3s ease; /* Transition effect for image */
-    width: 100%; /* Set image width to 100% */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 400px; /* Set maximum width */
-    max-height: 350px; /* Set maximum height */
-  }
-
-  .gallery-item:hover img {
-    transform: scale(1.1); /* Increase size on hover */
-  }
-
-  .gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Fade in/out transition */
-  }
-
-  .gallery-item:hover .gallery-overlay {
-    opacity: 1; /* Show overlay on hover */
-  }
-
-  .gallery-text {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  /* Center lightbox on mobile devices */
-  @media (max-width: 767px) {
-    .ekko-lightbox {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.9); /* Darken background */
-    }
-  }
-</style>
 
 	</head>
 	<body data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
@@ -119,8 +67,8 @@
 					<div class="container container-xl-custom">
 						<div class="row justify-content-between align-items-center">
 							<div class="col-auto">
-								<div class="py-4">
-									<a href="demo-architecture-interior.html">
+								<div class="py-2">
+									<a href="index.html">
 										<img alt="Porto" width="153" height="53" src="img/demos/architecture-interior/logo.png">
 									</a>
 								</div>
@@ -177,7 +125,7 @@
 															<a class="dropdown-item active" href="index.html#home">Home</a>
 														</li>
 														<li class="dropdown">
-															<a class="dropdown-item" href="index.html#whoweare">Who We Are</a>
+															<a class="dropdown-item" href="About.html">Who We Are</a>
 														</li>
 														<li class="dropdown">
 															<a class="dropdown-item" href="index.html#ourservices">Our Services</a>
@@ -208,7 +156,7 @@
 								<div class="overflow-hidden">
 									<ul class="breadcrumb d-block text-center">
 										<li><a href="index.html">Home</a></li>
-										<li class="active">Products</li>
+										<li class="active"> <a href="Allproduct.html">Products</a></li>
 									</ul>
 								</div>
 								<div class="overflow-hidden">

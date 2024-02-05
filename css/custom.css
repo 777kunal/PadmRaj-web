@@ -5,3 +5,54 @@
     width: 64px;
     z-index: 99999999;
 }
+.gallery-item {
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide overflow to hide image overlay */
+    position: relative; /* Position for overlay */
+  }
+
+  .gallery-item img {
+    transition: transform 0.3s ease; /* Transition effect for image */
+    width: 100%; /* Set image width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Set maximum width */
+    max-height: 350px; /* Set maximum height */
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1); /* Increase size on hover */
+  }
+
+  .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Fade in/out transition */
+  }
+
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  .gallery-text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* Center lightbox on mobile devices */
+  @media (max-width: 767px) {
+    .ekko-lightbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.9); /* Darken background */
+    }
+  }
