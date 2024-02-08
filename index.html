@@ -78,15 +78,17 @@
 							<a href="tel:+9503985233"
 								class="text-color-light font-weight-bold text-decoration-none d-none d-sm-block me-2"><span
 									class="font-weight-light font-weight-bold">+950-398-5233</span></a>
-									<ul class="social-icons social-icons-clean social-icons-icon-light">
-										<li class="social-icons-facebook"><a href="https://www.facebook.com/profile.php?id=100082848557042&mibextid=ZbWKwL" target="_blank"
-												title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li class="social-icons-instagram"><a href="https://www.instagram.com/padmraj.interiors/?igsh=cXJlbmFlMm81Nmps" target="_blank"
-												title="Instagram"><i class="fa-brands fa-instagram"></i>
-											</a></li>
-										<li class="social-icons-linkedin"><a href="" target="_blank"
-												title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
+							<ul class="social-icons social-icons-clean social-icons-icon-light">
+								<li class="social-icons-facebook"><a
+										href="https://www.facebook.com/profile.php?id=100082848557042&mibextid=ZbWKwL"
+										target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social-icons-instagram"><a
+										href="https://www.instagram.com/padmraj.interiors/?igsh=cXJlbmFlMm81Nmps"
+										target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i>
+									</a></li>
+								<li class="social-icons-linkedin"><a href="" target="_blank" title="Linkedin"><i
+											class="fab fa-linkedin-in"></i></a></li>
+							</ul>
 							<button class="hamburguer-btn hamburguer-btn-light" data-set-active="false">
 								<span class="hamburguer">
 									<span></span>
@@ -251,7 +253,8 @@
 								luxurious end-to-end home interiors at equitable prices, Padmraj Interioar has
 								successfully delivered the dreams of numerous clients.</p>
 							<a class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 appear-animation"
-								data-appear-animation="fadeInUpShorter" href="About.html" data-appear-animation-delay="750">LEARN MORE</a>
+								data-appear-animation="fadeInUpShorter" href="About.html"
+								data-appear-animation-delay="750">LEARN MORE</a>
 						</div>
 						<div class="col-lg-6">
 							<div class="row">
@@ -331,7 +334,9 @@
 										</svg>
 										<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">
 											Home Interior Design</h3>
-										<p class="font-weight-light text-color-light opacity-5 mb-0">Personalized consultation to understand your lifestyle, preferences, and vision for your home.</p>
+										<p class="font-weight-light text-color-light opacity-5 mb-0">Personalized
+											consultation to understand your lifestyle, preferences, and vision for your
+											home.</p>
 									</div>
 								</div>
 
@@ -366,7 +371,9 @@
 										</svg>
 										<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">
 											Commercial Interior Design</h3>
-										<p class="font-weight-light text-color-light opacity-5 mb-0">Innovative design solutions for offices, retail stores, restaurants, and other commercial spaces. </p>
+										<p class="font-weight-light text-color-light opacity-5 mb-0">Innovative design
+											solutions for offices, retail stores, restaurants, and other commercial
+											spaces. </p>
 									</div>
 								</div>
 
@@ -387,7 +394,9 @@
 										</svg>
 										<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">
 											Interior Products</h3>
-										<p class="font-weight-light text-color-light opacity-5 mb-0">Discover our handpicked selection of interior products, featuring furniture, lighting, rugs, art, and decor pieces</p>
+										<p class="font-weight-light text-color-light opacity-5 mb-0">Discover our
+											handpicked selection of interior products, featuring furniture, lighting,
+											rugs, art, and decor pieces</p>
 									</div>
 								</div>
 
@@ -406,7 +415,9 @@
 										</svg>
 										<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">
 											Custom Projects</h3>
-										<p class="font-weight-light text-color-light opacity-5 mb-0">Elevate your space with bespoke furniture design, upholstery, and curated fabric selection for a truly personalized touch.</p>
+										<p class="font-weight-light text-color-light opacity-5 mb-0">Elevate your space
+											with bespoke furniture design, upholstery, and curated fabric selection for
+											a truly personalized touch.</p>
 									</div>
 								</div>
 
@@ -437,7 +448,10 @@
 									data-appear-animation="maskUp" data-appear-animation-delay="250">Our Products</h2>
 							</div>
 							<p class="text-4 mb-5 appear-animation" data-appear-animation="fadeInUpShorter"
-								data-appear-animation-delay="500">Transform your home into a haven of elegance with Padmraj Interior's exquisite products. Elevate your space with our blend of sophistication and practicality. Welcome to a world where every detail counts, and every corner exudes timeless charm. Experience luxury with Padmraj Interior.
+								data-appear-animation-delay="500">Transform your home into a haven of elegance with
+								Padmraj Interior's exquisite products. Elevate your space with our blend of
+								sophistication and practicality. Welcome to a world where every detail counts, and every
+								corner exudes timeless charm. Experience luxury with Padmraj Interior.
 							</p>
 						</div>
 					</div>
@@ -756,45 +770,65 @@
 							<div class="card custom-card-style-1 h-100">
 								<div class="card-body pt-5">
 
-									<form class="contact-form form-style-4 form-errors-light"
-										action="php/contact-form-recaptcha-v2.php" method="POST">
-										<input type="hidden" value="Contact Form" name="subject" id="subject">
-										<div class="form-group col-lg-12 ms-auto my-0">
-											<div class="contact-form-success alert alert-success d-none">
-												Message has been sent to us.
-											</div>
+									<!-- Add this div for displaying the toaster message -->
+									<div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+										data-bs-autohide="true">
+										<div class="toast-body bg-success text-white">
+											Message has been sent successfully.
+										</div>
+									</div>
 
-											<div class="contact-form-error alert alert-danger d-none">
-												Error sending your message.
-												<span class="mail-error-message text-1 d-block"></span>
-											</div>
-										</div>
-										<div class="row">
-											<div class="form-group col-lg-6">
-												<input type="text" value="" data-msg-required="Please enter your name."
-													maxlength="100" class="form-control py-2" placeholder="Name"
-													name="name" id="name" required>
-											</div>
-											<div class="form-group col-lg-6">
-												<input type="email" value=""
-													data-msg-required="Please enter your email address."
-													data-msg-email="Please enter a valid email address." maxlength="100"
-													class="form-control py-2" placeholder="E-mail" name="email"
-													id="email" required>
-											</div>
-										</div>
-										<div class="row">
-											<div class="form-group col">
-												<textarea maxlength="5000"
-													data-msg-required="Please enter your message." rows="4"
-													class="form-control" placeholder="Message" name="message"
-													id="message" required></textarea>
-											</div>
-										</div>
-										<input type="submit" value="Send Message"
-											class="btn btn-dark text-2 font-weight-bold text-uppercase btn-px-5 py-3 position-absolute"
-											data-loading-text="Loading..." style="bottom: -30px; right: 25px;">
-									</form>
+								
+<div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+    <div class="toast-body bg-success text-white">
+        Message has been sent successfully.
+    </div>
+</div>
+
+<!-- Your form -->
+<form class="contact-form form-style-4 form-errors-light" action="https://formspree.io/f/myyreajz" method="POST">
+    <input type="hidden" value="Contact Form" name="subject" id="subject">
+    <div class="form-group col-lg-12 ms-auto my-0">
+        <div class="contact-form-success alert alert-success d-none">
+            Message has been sent to us.
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-lg-6">
+            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control py-2" placeholder="Name" name="name" id="name" required>
+        </div>
+        <div class="form-group col-lg-6">
+            <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control py-2" placeholder="E-mail" name="email" id="email" required>
+        </div>
+		<div class="form-group col-lg-8">
+            <input type="number" value="" data-msg-required="Please enter your phone number" minlength="10"  maxlength="10"   class="form-control py-2" placeholder="Phone Number" name="PhoneNumber" id="PhoneNumber" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col">
+            <textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" placeholder="Message" name="message" id="message" required></textarea>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-dark text-2 font-weight-bold text-uppercase btn-px-5 py-3 position-absolute" style="bottom: -30px; right: 25px;">Send Message</button>
+</form>
+
+<script>
+    // Function to show the toaster message
+    function showToast() {
+        var toast = document.getElementById('toast');
+        var bsToast = new bootstrap.Toast(toast);
+        bsToast.show();
+    }
+
+    // Event listener for form submission
+    document.querySelector('.contact-form').addEventListener('submit', function (event) {
+        // Show the toaster message when the form is submitted successfully
+        showToast();
+    });
+</script>
+
+
+
 
 								</div>
 							</div>
@@ -810,13 +844,15 @@
 				<div class="row justify-content-between">
 					<div class="col-auto">
 						<ul class="social-icons social-icons-clean social-icons-icon-light">
-							<li class="social-icons-facebook"><a href="https://www.facebook.com/profile.php?id=100082848557042&mibextid=ZbWKwL" target="_blank"
-									title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-							<li class="social-icons-instagram"><a href="https://www.instagram.com/padmraj.interiors/?igsh=cXJlbmFlMm81Nmps" target="_blank"
-									title="Instagram"><i class="fa-brands fa-instagram"></i>
+							<li class="social-icons-facebook"><a
+									href="https://www.facebook.com/profile.php?id=100082848557042&mibextid=ZbWKwL"
+									target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="social-icons-instagram"><a
+									href="https://www.instagram.com/padmraj.interiors/?igsh=cXJlbmFlMm81Nmps"
+									target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i>
 								</a></li>
-							<li class="social-icons-linkedin"><a href="" target="_blank"
-									title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+							<li class="social-icons-linkedin"><a href="" target="_blank" title="Linkedin"><i
+										class="fab fa-linkedin-in"></i></a></li>
 						</ul>
 					</div>
 					<div class="col-auto text-end">
