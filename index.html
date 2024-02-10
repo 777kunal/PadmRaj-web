@@ -448,10 +448,7 @@
 									data-appear-animation="maskUp" data-appear-animation-delay="250">Our Products</h2>
 							</div>
 							<p class="text-4 mb-5 appear-animation" data-appear-animation="fadeInUpShorter"
-								data-appear-animation-delay="500">Transform your home into a haven of elegance with
-								Padmraj Interior's exquisite products. Elevate your space with our blend of
-								sophistication and practicality. Welcome to a world where every detail counts, and every
-								corner exudes timeless charm. Experience luxury with Padmraj Interior.
+								data-appear-animation-delay="500">Turn your home into a beautiful retreat with Padmraj Interior's stunning products. Add a touch of sophistication and usefulness to your space. Step into a world where every little thing matters, and each area radiates enduring allure. Feel the luxury with Padmraj Interior.
 							</p>
 						</div>
 					</div>
@@ -630,9 +627,8 @@
 							<span class="text-color-primary custom-font-secondary font-weight-semibold">THE BEST
 								CHOICE</span>
 							<h2 class="text-color-light font-weight-bold pb-3 mb-3">Why Hire Us?</h2>
-							<p class="font-weight-light text-color-light line-height-9 text-4 mb-5">Lorem ipsum dolor
-								sit amet, consectetur adipiscing eli blandit massa im. Nullam id varius nunc. Vivamus
-								bibendum mex, et faucibus lacus venena bibendum mex.</p>
+							<p class="font-weight-light text-color-light line-height-9 text-4 mb-5">Choose Padmraj Interior for your home design. With lots of experience, we give great quality and personalized service just for you. We pay close attention to detail to make everything perfect in your home. Your happiness matters most, so we work hard to make sure you're really happy. Trust Padmraj Interior for awesome home design and service.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -663,30 +659,47 @@
 					<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
 						<div class="card border-0 custom-box-shadow-1">
 							<div class="card-body text-center mt-4">
-								<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0"
-									data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
+								<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false, 'autoplay': true, 'autoplayTimeout': 3000}">
 									<div class="text-center px-5">
-										<span
-											class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
+										<span id="projects-counter" class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
 										<p class="text-4 custom-responsive-m-p-x">Projects made with total success</p>
 									</div>
 									<div class="text-center px-5">
-										<span
-											class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
+										<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
 										<p class="text-4 custom-responsive-m-p-x">Years in Business</p>
 									</div>
 									<div class="text-center px-5">
-										<span
-											class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
+										<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
 										<p class="text-4 custom-responsive-m-p-x">Architects &amp; Interior Designs</p>
 									</div>
 								</div>
+								
 								<a data-hash data-hash-offset="0" data-hash-offset-lg="95" href="#contactus"
 									class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 custom-btn-pos-1 custom-btn-style-1">GET
 									A QUOTE</a>
 							</div>
 						</div>
 					</div>
+					<script>
+						// JavaScript code to increment the projects counter
+						var counter = 0; // Starting value for the counter
+						var counterElement = document.getElementById('projects-counter');
+					
+						counterElement.textContent = Math.round(counter); // Round the initial value
+						
+						var interval = setInterval(function() {
+							if (counter >= 50) {
+								clearInterval(interval); // Stop the interval when counter reaches 50
+							} else {
+								counter++;
+								counterElement.textContent = counter;
+							}
+						}, 50); // Adjust the interval as needed (milliseconds)
+					</script>
+					
+					
+					
+
 					<div class="col-sm-6 col-lg-3 col-xl-2 order-4 order-xl-4 mb-4 mb-sm-0">
 						<div class="card border-0 custom-box-shadow-1">
 							<div class="card-body my-4 my-xl-5">
@@ -802,7 +815,9 @@
 									<ul class="list list-icons list-icons-sm">
 										<li class="text-color-light font-weight-light">
 											<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong
-												class="font-weight-normal">Address:</strong> Maharashtra pune
+												class="font-weight-normal">Address:</strong> hawaldar vasti ,Moshi,pune
+												Pimpri Chinchwad412105
+												Maharashtra, India
 										</li>
 										<li class="text-color-light font-weight-light">
 											<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong
@@ -810,7 +825,7 @@
 												href="mailto:padmraj.interior@outlook.com"
 												class="link-hover-style-1 ms-1">
 											</a>
-											interior@outlook.com
+											padmraj.interior@outlook.com
 										</li>
 									</ul>
 								</div>
