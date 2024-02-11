@@ -659,7 +659,7 @@
 					<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
 						<div class="card border-0 custom-box-shadow-1">
 							<div class="card-body text-center mt-4">
-								<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false, 'autoplay': true, 'autoplayTimeout': 3000}">
+								<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false, 'autoplay': true, 'autoplayTimeout': 4000}">
 									<div class="text-center px-5">
 										<span id="projects-counter" class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
 										<p class="text-4 custom-responsive-m-p-x">Projects made with total success</p>
@@ -680,26 +680,6 @@
 							</div>
 						</div>
 					</div>
-					<script>
-						// JavaScript code to increment the projects counter
-						var counter = 0; // Starting value for the counter
-						var counterElement = document.getElementById('projects-counter');
-					
-						counterElement.textContent = Math.round(counter); // Round the initial value
-						
-						var interval = setInterval(function() {
-							if (counter >= 50) {
-								clearInterval(interval); // Stop the interval when counter reaches 50
-							} else {
-								counter++;
-								counterElement.textContent = counter;
-							}
-						}, 50); // Adjust the interval as needed (milliseconds)
-					</script>
-					
-					
-					
-
 					<div class="col-sm-6 col-lg-3 col-xl-2 order-4 order-xl-4 mb-4 mb-sm-0">
 						<div class="card border-0 custom-box-shadow-1">
 							<div class="card-body my-4 my-xl-5">
@@ -723,7 +703,7 @@
 				</div>
 			</div>
 
-			<section class="section section-height-4 bg-light border-0 mt-4 mb-0">
+			<!-- <section class="section section-height-4 bg-light border-0 mt-4 mb-0">
 				<div class="container container-xl-custom">
 					<div class="row">
 						<div class="col">
@@ -789,7 +769,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="section section-height-4 bg-quaternary border-0 m-0" id="contactus">
 				<div class="container container-xl-custom">
@@ -879,9 +859,10 @@
 										</div>
 										<div class="row">
 											<div class="form-group col-lg-6">
-												<input type="text" value="" data-msg-required="Please enter your name."
-													maxlength="100" class="form-control py-2" placeholder="Name"
-													name="name" id="name" required>
+												<input type="number" value="" data-msg-required="Please enter your name."
+												maxlength="100" class="form-control py-2" placeholder="Name"
+												name="name" id="name" required style="-moz-appearance: textfield;">
+										 
 											</div>
 											<div class="form-group col-lg-6">
 												<input type="email" value=""

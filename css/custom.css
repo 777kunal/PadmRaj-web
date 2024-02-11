@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: #eeeeee4d; /* Semi-transparent black overlay */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Fade in/out transition */
   }
@@ -55,4 +55,10 @@
       justify-content: center;
       background-color: rgba(0, 0, 0, 0.9); /* Darken background */
     }
+
   }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
